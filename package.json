@@ -5,7 +5,7 @@
   "description": "Nest API + worker cho fb-traffic (ncptsp)",
   "license": "MIT",
   "scripts": {
-    "build:core": "node ../NCPTSP/ncptsp/packages/ncptsp-core/build.mjs && node ../NCPTSP/ncptsp/packages/ncptsp-core/build-auth.mjs",
+    "build:core": "node ../NCPTSP/ncptsp/packages/ncptsp-core/build.mjs && node ../NCPTSP/ncptsp/packages/ncptsp-core/build-auth.mjs && node ../NCPTSP/ncptsp/packages/ncptsp-core/build-spu-summary.mjs && node ../NCPTSP/ncptsp/packages/ncptsp-core/build-videos.mjs",
     "prebuild": "pnpm run build:core",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\"",
